@@ -1,0 +1,262 @@
+#data collection
+
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+print(mylist)
+print(type(mylist))
+print(mylist[0])
+print(mylist[1])
+print(mylist[2])
+print(mylist[-1])
+print(mylist[2:5])
+print(mylist[:5])
+print(mylist[1:])
+print(mylist[1:8:2])
+print(mylist[:])
+print(mylist[::-1])
+
+
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+# print(mylist)
+# print(type(mylist))
+# print(mylist[0])
+# print(mylist[1])
+# print(mylist[2])
+# print(mylist[-1])
+# print(mylist[2:5])
+# print(mylist[:5])
+# print(mylist[1:])
+# print(mylist[1:8:2])
+# print(mylist[:])
+# print(mylist[::-1])
+
+mylist[2]="Akshay"
+print(mylist)
+#how to change the the index value
+
+
+#in operator is used know the present or not in the mylist
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+if "ankush" in mylist
+ print("yes ankush is avilable")
+else:
+ print("not avilable")
+#we have represent with the help of list data type is stack 
+
+#at the element in last
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+print(mylist)
+#
+mylist.append('harsh')
+mylist.append('laxman')
+print(mylist)
+
+#insert 
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+print(mylist)
+mylist.insert(1,"sanket")
+print(mylist)
+
+
+#remove
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+print(mylist)
+mylist.remove("sandip")
+print(mylist)
+
+
+#cloning 
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+print(mylist)
+newlist = mylist.copy()    #cloning 
+print(mylist)
+print(newlist)
+
+mlist = [['prashant','jha'],['85.86'],[444022,"yyy"]]
+print("example of multidimentinal list:")
+print(mlist)
+#print(mlist[row][col])
+print(mylist[0][0])  #
+print(mylist[0][1])   #
+print(mylist[1][0]) #
+print(mylist[2][0])  # 4440
+print(mylist[2][1])   #yyyy
+
+
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+print(mylist)
+list1=["prashant","jha"]
+print(list1*2)
+
+
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+print(mylist)
+list1=["prashant","jha"]
+print(list1*2)
+list2=[50,25.50]
+print(list1+list2)
+
+
+
+list2=[50,25.50,'prashant']
+del list2[2]
+print(list2)
+
+
+
+
+list2=[50,25.50,'prashant']
+#del list2[2]
+del list2
+print(list2)
+
+
+
+v=[1,2,3,4,5]
+for i in v:
+    print(i)
+
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+print(mylist)
+name="prashant"
+print(name)
+myname=list(name)
+print(myname)
+
+
+
+
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+print(mylist)
+mylist=[40,30,20,10]
+mylist.reverse()
+print(mylist)
+
+#sorting example
+mylist = ["prashant","ashish","komal","ankush","Ashish",77,"sandip",60.52,"prashant"]
+print(mylist)
+mylist=[44,22,77,0,9,88]   #0,9,22,44,77,88
+mylist.sort()   #sort(reverse=True)
+print(mylist)
+
+
+mylist=[44,22,77,0,9,88]
+newlist=mylist  #both the list having same assress
+print(id(mylist))
+print(id(newlist))
+
+
+mytuple=("vasu","'virat","rohit","vk","anushka",23,3.15)
+print(mytuple)
+print(type(mytuple))
+
+#membership oprator:
+#1.in
+#2.not in
+print('z' in "vasu")
+print('z' not in "vasu")
+ 
+> set datatypes :
+ examples:
+ 
+1]
+myset={1,2,"vasu",22,"hit","ece","nds"}
+print(myset)
+print(type(myset))
+
+2]
+myset={1,2,"vasu",22,"hit","ece","nds"}
+print(myset)
+#print(type(myset))
+myset.add(60)
+print(myset)
+
+3]
+myset={1,2,"vasu",22,"hit","ece","nds"}
+print(myset)
+#print(type(myset))
+myset.discard(3)
+print(myset)
+
+(if value is not present in list we can use 'discard' but we can't use 'remove')
+
+4]
+myset = {19,23,34,36}
+yourset = {"vasu","ece"}
+newset = myset.union(myset)
+print(newset)
+
+5]
+myset = {19,23,34,36}
+yourset = {1,2,3,4}
+#newset = myset.union(myset)
+print(myset.intersection(yourset)) 
+
+6]
+myset = {10,20,30,40}
+print(myset.pop())
+
+
+
+
+> Nested if else :
+
+if condtion-1:
+	if condtion-2:
+		#statement
+	else:
+		#statement
+else:
+	if condtion-3:
+		#statement
+	else:
+		#statement
+
+examples:
+1]
+a = int(input("Enter the value of a:"))
+b = int(input("Enter the value of b:"))
+c= int(input("Enter the value of c:"))
+if a>b:
+    if a>c:
+        print("a is greater")
+    else:
+        print("c is greater")
+else:
+    if b>c:
+        print("b is greater")
+    else:
+        print("c is greater")
+
+
+2]
+a = int(input("Enter the value of a:"))
+b = int(input("Enter the value of b:"))
+c= int(input("Enter the value of c:"))
+if a<b:
+    if a<c:
+        print("a is smaller")
+    else:
+        print("c is smaller")
+else:
+    if b<c:
+        print("b is smaller")
+    else:
+        print("c is smaller")
+
+
+3]
+mylist=[1,2,3,4,5]
+for i in mylist: #i=5
+    print(i)
+
+4]
+for i in range(5): #i=5
+    print(i)
+
+5]
+for i in range(1,11,2): #i=15
+    print(i*2)
+
+
+
+
